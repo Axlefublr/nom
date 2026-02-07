@@ -262,6 +262,8 @@ func (sls SQLiteStore) GetAllItems(ordering string) ([]Item, error) {
 
 	var stmt string
 	switch ordering {
+	case constants.AscendingOrdering:
+		stmt = fmt.Sprintf(itemStmt, constants.AscendingOrdering)
 	case constants.DescendingOrdering:
 		stmt = fmt.Sprintf(itemStmt, constants.DescendingOrdering)
 	default:

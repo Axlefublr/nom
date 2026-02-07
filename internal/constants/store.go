@@ -4,5 +4,5 @@ package constants
 const (
 	AscendingOrdering  = "asc"
 	DescendingOrdering = "desc"
-	DefaultOrdering    = AscendingOrdering
+	DefaultOrdering    = DescendingOrdering
 )
